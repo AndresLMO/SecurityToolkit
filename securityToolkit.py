@@ -1,11 +1,16 @@
-from PortScanner import PortScanner
+import PortScanner
 
 
 salir= False
 while salir==False:
     try:
         menu=input("\n**********MENU DE SISTEMA**********"+
-                   "\n\n1. Escaneo de Puertos"+
+                   "\n\n1. Modulo de Profesores"+
+                   "\n2. Modulo de Estudiantes"+
+                   "\n3. Modulo de Cursos"+
+                   "\n4. Modulo de grupos"+
+                   "\n5. Modulo clases"+
+                   "\n6. Modulo inscripcion a Grupos"+
                    "\n7. Salir"+
                    "\n\nIngrese la opcion que desea realizar: "
                    )
@@ -18,9 +23,7 @@ while salir==False:
 #****************************************************MODULO PROFESORES***********************************************************************************
 
             newPortScanner=PortScanner()
-            ip=input("Ingrese la IP que desea analizar: ")
-            ports = [22, 80, 443, 3389, 8080]
-            newPortScanner.scan(ip,ports)
+            soli=input("Ingrese la IP que desea analizar: ")
                 
                 
                 
